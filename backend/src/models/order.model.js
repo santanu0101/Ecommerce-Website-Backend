@@ -1,16 +1,6 @@
 import mongoose,{Schema} from "mongoose";
+import { itemSchema } from "./items.model.js";
 
-const orderItemSchema = new Schema({
-    productId:{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Product"
-    },
-
-    quantity:{
-        type: Number,
-        default: 0
-    }
-})
 
 const orderSchema = new Schema({
 
@@ -24,7 +14,7 @@ const orderSchema = new Schema({
         ref:"User"
     },
 
-    orderItems:[orderItemSchema],
+    orderItems:[itemSchema],
 
     address:{
         type:String,
