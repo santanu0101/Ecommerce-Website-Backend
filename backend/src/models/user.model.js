@@ -44,6 +44,11 @@ const userSchema = new Schema(
       enum: ["male", "female"],
     },
 
+    isSeller: { 
+      type: Boolean, 
+      default: false 
+    },
+
     refreshToken: {
       type: String,
     },

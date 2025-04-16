@@ -4,7 +4,9 @@ import mongoose,{mongo, Schema} from "mongoose"
 const productSchema = new Schema({
     description:{
         type: String,
-        required: true
+        required: true,
+        maxlength: [1500, "Description max length should be 1500 charecters"],
+        minlength: [10, "Description min length should be 10 charecters"]
     },
 
     name: {
