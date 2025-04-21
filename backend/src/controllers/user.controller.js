@@ -56,7 +56,7 @@ const userRegister = asyncHandler(async (req, res) => {
   });
 
   const createdUser = await User.findById(user._id).select(
-    "-password -refreshToken -wishlist"
+    "-password -refreshToken -wishlist -isSeller"
   );
 
   if (!createdUser) {

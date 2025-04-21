@@ -2,13 +2,13 @@
 Module	Main Routes (CRUD + Auth)
 Auth/User	POST /register, POST /login, POST /google-signin, GET /profile, PUT /profile, GET /users (admin), DELETE /users/:id (admin)
 Products	GET /products, GET /products/:id, POST /products (admin), PUT /products/:id (admin), DELETE /products/:id (admin)
+Cart	GET /cart, POST /cart, PUT /cart/:itemId, DELETE /cart/:itemId
 
 
 ------------------running--------------------------
-Cart	GET /cart, POST /cart, PUT /cart/:itemId, DELETE /cart/:itemId
-
-------------------other-----------------------------
 Orders	POST /orders, GET /orders, GET /orders/:id, PUT /orders/:id (admin - update status), DELETE /orders/:id (optional)
+
+------------------other----------------------------
 Categories	GET /categories, POST /categories (admin), PUT /categories/:id, DELETE /categories/:id
 Payments	POST /payment (integrated with Razorpay/Stripe/PayPal)
 
