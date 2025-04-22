@@ -57,7 +57,7 @@ PAYPAL_MODE=sandbox
 
 ### 4. Start Server
 ```bash
-npm run dev
+npm start
 ```
 
 ---
@@ -74,7 +74,7 @@ npm run dev
 | Orders    | POST `/orders`               | User        |
 | Orders    | GET `/orders`, `/orders/:id` | User/Admin/Seller |
 | Payments  | POST `/payment/stripe-intent`<br>POST `/payment/paypal-create` | Authenticated |
-| Admin     | GET `/users`, manage orders  | Admin       |
+| seller     | GET `/users`, manage orders  | seller       |
 
 ---
 
