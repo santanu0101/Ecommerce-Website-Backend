@@ -4,13 +4,13 @@ Auth/User	POST /register, POST /login, POST /google-signin, GET /profile, PUT /p
 Products	GET /products, GET /products/:id, POST /products (admin), PUT /products/:id (admin), DELETE /products/:id (admin)
 Cart	GET /cart, POST /cart, PUT /cart/:itemId, DELETE /cart/:itemId
 Orders	POST /orders, GET /orders, GET /orders/:id, PUT /orders/:id (admin - update status), DELETE /orders/:id (optional)
+Categories	GET /categories, POST /categories (seller), PUT /categories/:id, DELETE /categories/:id
 
 
 ------------------running--------------------------
-Categories	GET /categories, POST /categories (seller), PUT /categories/:id, DELETE /categories/:id
+Payments	POST /payment (integrated with Razorpay/Stripe/PayPal)
 
 ------------------other----------------------------
-Payments	POST /payment (integrated with Razorpay/Stripe/PayPal)
 
 ------------------optional--------------------------
 Reviews	POST /products/:id/reviews, DELETE /products/:id/reviews/:reviewId
