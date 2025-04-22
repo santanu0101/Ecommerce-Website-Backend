@@ -34,8 +34,8 @@ This is the backend RESTful API for an E-Commerce platform supporting multiple s
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/yourusername/ecommerce-backend.git
-cd ecommerce-backend
+git clone https://github.com/santanu0101/Ecommerce-Website-Backend.git
+cd ecommerce-website-backend
 ```
 
 ### 2. Install Dependencies
